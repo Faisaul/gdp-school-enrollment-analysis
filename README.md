@@ -1,4 +1,4 @@
-# GDP and Secondary School Enrollment: A Cross-Country Panel Data Analysis
+# GDP, Electricity Access, and Secondary School Enrollment
 
 ![R](https://img.shields.io/badge/R-Programming-blue)
 ![Econometrics](https://img.shields.io/badge/Method-Linear%20Regression-green)
@@ -11,13 +11,13 @@
 
 ## Overview
 
-This project explores the relationship between GDP per capita and secondary school enrollment across countries between 2015 and 2024. The analysis also examines whether access to electricity helps explain differences in educational outcomes after controlling for GDP per capita.
+This project examines the relationship between GDP per capita, access to electricity, and secondary school enrollment across countries from 2015 to 2024 using World Bank Open Data.
 
 ---
 
 ## Research Question
 
-**How are GDP per capita and access to electricity associated with secondary school enrollment across countries?**
+**How do GDP per capita and access to electricity relate to secondary school enrollment across countries?**
 
 ---
 
@@ -41,23 +41,22 @@ Final dataset:
 
 ## Methods
 
-- Data cleaning using **tidyverse**
-- Converted datasets from **wide** to **long** format
-- Merged datasets using country code and year
-- Created a cross-country panel dataset
-- Log transformation of GDP per capita
-- Exploratory data analysis
-- Simple linear regression
-- Multiple linear regression
-- Data visualization with **ggplot2**
+- Imported World Bank datasets into R
+- Cleaned and transformed the data
+- Converted datasets from wide to long format
+- Merged datasets by country code and year
+- Applied a log transformation to GDP per capita
+- Conducted exploratory data analysis
+- Estimated simple and multiple linear regression models
+- Visualized results using ggplot2
 
 ---
 
 ## Main Findings
 
-- Higher GDP per capita is positively associated with secondary school enrollment.
-- After controlling for electricity access, GDP remained statistically significant.
-- Adding electricity access improved model fit (**R² increased from 0.61 to 0.70**).
+- Countries with higher GDP per capita generally had higher secondary school enrollment.
+- Adding access to electricity improved the explanatory power of the regression model.
+- The final model explained approximately 70% of the variation in secondary school enrollment (R² ≈ 0.70).
 
 ---
 
@@ -84,9 +83,15 @@ figures/
 
 ---
 
-## Tools
+## Software and Packages
 
 - R
 - tidyverse
 - ggplot2
 - World Bank Open Data
+
+
+
+## What I Learned
+
+This project helped me gain experience working with real-world datasets in R, including data cleaning, reshaping data, merging multiple datasets, creating visualizations, and estimating regression models using publicly available data.
